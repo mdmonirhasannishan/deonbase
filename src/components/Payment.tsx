@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import Onclick from './Onclick';
 
 const PricingTable = () => {
   const [includeClientPortal, setIncludeClientPortal] = useState(false);
@@ -84,7 +85,7 @@ const PricingTable = () => {
               </div>
               <button
                 onClick={toggleClientPortal}
-                className={`px-4 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                className={`px-5 py-3 rounded-md text-sm font-medium transition-colors ${
                   includeClientPortal
                     ? 'bg-primary text-white'
                     : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
@@ -95,14 +96,13 @@ const PricingTable = () => {
             </div>
 
             <div className=" pt-2 pb-4 mt-6">
-              <Link href="/contact">
-                <button
-                  
-                  className="w-full bg-primary hover:bg-primary-dark text-white font-medium py-2 px-6 rounded-md transition-colors text-sm"
-                >
-                  Book a Meeting
-                </button>
-              </Link>
+              <Onclick path="/contact">
+
+                  <button className="w-full bg-primary hover:bg-primary-dark text-white font-medium py-4 px-6 rounded-md transition-colors text-sm">
+                    Book a Meeting
+                  </button>
+
+              </Onclick>
             </div>
           </div>
         </div>

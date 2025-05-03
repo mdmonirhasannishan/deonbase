@@ -1,7 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { database, push, ref } from '../../firebase/config';
-import BgEffect from '../../components/BgEffect';
 
 type Particle = {
   left: string;
@@ -116,7 +115,7 @@ const MeetingForm = () => {
   };
 
   return (
-    <div className="relative h-[51.4]">
+    <div className="relative min-h-screen flex items-center justify-center">
       <div className="fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-tl from-black from-15% via-primary/70 via-50% to-black to-85%">
           <div className="absolute inset-0 opacity-30">
@@ -129,7 +128,7 @@ const MeetingForm = () => {
           <div className="relative z-10 w-full h-full max-w-2xl" />
         </div>
 
-        {/* Floating particles - now hydration-safe */}
+        {/* Floating particles */}
         {particles.map((particle, i) => (
           <div
             key={`bg-particle-${i}`}
@@ -139,8 +138,8 @@ const MeetingForm = () => {
         ))}
       </div>
 
-      {/* Form Content */}
-      <div className="relative mt-20 w-full h-full flex items-center justify-center p-4">
+      {/* Centered Form */}
+      <div className="relative w-full h-full flex items-center justify-center p-4">
         <div className="bg-background p-6 rounded-lg border border-primary shadow-sm max-w-2xl w-full relative z-10">
           <h2 className="text-2xl font-bold text-slate-200 mb-6">Schedule a Meeting</h2>
 
