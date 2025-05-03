@@ -31,7 +31,7 @@ const Navbar = () => {
                   width={700}
                   height={700}
                 />
-                <div className="text-primary block font-bold text-2xl">
+                <div className="text-primary hidden md:block select-none font-bold text-2xl">
                   <h1>DeonBase</h1>
                 </div>
               </div>{' '}

@@ -96,13 +96,13 @@ const PricingTable = () => {
             </div>
 
             <div className=" pt-2 pb-4 mt-6">
-              <Onclick path="/contact">
+              <Link href="/contact" className="cursor-pointer">
 
                   <button className="w-full bg-primary hover:bg-primary-dark text-white font-medium py-4 px-6 rounded-md transition-colors text-sm">
                     Book a Meeting
                   </button>
 
-              </Onclick>
+              </Link>
             </div>
           </div>
         </div>
