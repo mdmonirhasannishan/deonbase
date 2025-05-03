@@ -140,7 +140,7 @@ const MeetingForm = () => {
       </div>
 
       {/* Form Content */}
-      <div className="relative pt-20 w-full h-full flex items-center justify-center p-4">
+      <div className="relative mt-20 w-full h-full flex items-center justify-center p-4">
         <div className="bg-background p-6 rounded-lg border border-primary shadow-sm max-w-2xl w-full relative z-10">
           <h2 className="text-2xl font-bold text-slate-200 mb-6">Schedule a Meeting</h2>
 
@@ -288,7 +288,7 @@ const MeetingForm = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full bg-primary hover:bg-primary-dark text-white font-medium py-2 px-4 rounded-md transition-colors ${
+                className={`w-full bg-primary hover:bg-primary-dark text-white font-medium py-4 px-4 rounded-md transition-colors ${
                   isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
                 }`}
               >
