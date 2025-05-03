@@ -274,10 +274,10 @@ export default function Home() {
                   <div className="flex-grow border-t border-gray-700"></div>
                 </div>
                 <div className=" pt-2 pb-4 mt-6">
-                  <Onclick path="/contact">
-                    <button className="w-full bg-primary hover:bg-primary-dark text-white font-medium py-2 px-6 rounded-md transition-colors text-sm">
+                  <Link href="/contact">
+                    <button className="w-full bg-primary hover:bg-primary-dark text-white font-medium py-4 px-6 rounded-md transition-colors text-sm">
                       Book a Meeting
-                    </button>
+                    </Link>
                   </Onclick>
                 </div>
               </div>
