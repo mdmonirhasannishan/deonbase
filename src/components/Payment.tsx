@@ -96,13 +96,13 @@ const PricingTable = () => {
             </div>
 
             <div className=" pt-2 pb-4 mt-6">
-              <Link href="/contact" >
+              <a href="/contact" >
 
                   <button className="w-full bg-primary cursor-pointer hover:bg-primary-dark text-white font-medium py-4 px-6 rounded-md transition-colors text-sm">
                     Book a Meeting
                   </button>
 
-              </Link>
+              </a>
             </div>
           </div>
         </div>
