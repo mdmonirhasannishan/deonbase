@@ -1,16 +1,11 @@
 import type { Metadata } from 'next';
-import { Exo_2, Nunito } from 'next/font/google';
+import { Exo_2 } from 'next/font/google';
 import Navbar from '../components/Navbar';
 import './globals.css';
 export const metadata: Metadata = {
-  title: 'Nishan',
-  description: 'agency website',
+  title: 'deonbase',
+  description: 'solution website',
 };
-
-export const nunito = Nunito({
-  weight: ['500', '600', '700'],
-  subsets: ['latin'],
-});
 
 const exo_2 = Exo_2({
   weight: ['500', '600', '700'],
