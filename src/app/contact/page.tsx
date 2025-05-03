@@ -115,7 +115,7 @@ const MeetingForm = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center">
+    <div className="relative w-full h-[51.4rem]  py-15 flex items-center justify-center">
       <div className="fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-tl from-black from-15% via-primary/70 via-50% to-black to-85%">
           <div className="absolute inset-0 opacity-30">
