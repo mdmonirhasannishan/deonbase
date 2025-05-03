@@ -276,9 +276,8 @@ export default function Home() {
                 <div className=" pt-2 pb-4 mt-6">
                   <Link href="/contact" className="cursor-pointer">
                     <button className="w-full bg-primary hover:bg-primary-dark text-white font-medium py-4 px-6 rounded-md transition-colors text-sm">
-                      Book a Meeting
-                    </Link>
-                  </Onclick>
+                      Book a Meeting </button>
+                  </Link>
                 </div>
               </div>
             </div>
