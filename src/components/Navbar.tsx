@@ -3,10 +3,15 @@ import { faBarsStaggered, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image';
 import Link from 'next/link';
 import MaxWidth from './MaxWidthRapper';
-import { nunito } from '../app/layout';
+import { Nunito } from 'next/font/google';
 import { redirect } from 'next/navigation';
 import Onclick from './Onclick';
 import ScrollTo from './Scrollto';
+
+const nunito = Nunito({
+  weight: ['500', '600', '700'],
+  subsets: ['latin'],
+});
 
 const Navbar = () => {
 
