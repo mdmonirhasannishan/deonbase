@@ -22,11 +22,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* icon and logo */}
           <div className="flex  md:gap-6 justify-start items-center">
-            <div className=" w-14 h-12 lg:hidden hover:bg-transparent/10 rounded-lg flex justify-center items-center text-primary cursor-pointer">
-              <FontAwesomeIcon className="w-[2.5rem] h-8 " icon={faBarsStaggered} size="sm" />
-            </div>
             <Onclick path="/">
-              <div className="flex justify-center items-center gap-3">
+              <div className="flex justify-center items-center">
                 <Image
                   className="w-[2.6rem]    cursor-pointer "
                   alt="logo"
@@ -34,7 +31,7 @@ const Navbar = () => {
                   width={700}
                   height={700}
                 />
-                <div className="text-primary hidden md:block font-bold text-2xl">
+                <div className="text-primary block font-bold text-2xl">
                   <h1>DeonBase</h1>
                 </div>
               </div>{' '}
