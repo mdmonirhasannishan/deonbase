@@ -237,16 +237,7 @@ export default function Home() {
         <MaxWidth>
           <div className="relative w-full h-full py-12 px-4 sm:px-6   border-primary  max-w-2xl mx-auto">
             <div className="text-center">
-              <h2 className="text-2xl font-bold text-slate-100 mb-2">
-                Thank You for Your Interest!
-              </h2>
-
-              <p className="text-gray-200 mb-6 max-w-md mx-auto">
-                We appreciate you considering our solutions. Our team will review your inquiry and
-                get back to you shortly.
-              </p>
-
-              <div className="bg-background border border-primary rounded-lg p-4 mt-10 max-w-md mx-auto">
+              <div className="bg-background border border-primary rounded-lg p-4 mt-10  mx-auto">
                 <p className="text-sm text-gray-300">
                   For immediate assistance, please contact us at{' '}
                 </p>
@@ -273,11 +264,26 @@ export default function Home() {
                   <span className="mx-4 text-gray-400 text-sm">OR</span>
                   <div className="flex-grow border-t border-gray-700"></div>
                 </div>
-                <div className=" pt-2 pb-4 mt-6">
-                  <a href="/contact">
-                    <button className="w-full bg-primary cursor-pointer hover:bg-primary-dark text-white font-medium py-4 px-6 rounded-md transition-colors text-sm">
-                      Book a Meeting </button>
-                  </a>
+                <div className="w-full h-full flex justify-center items-center  ">
+                  <div className="py-2 pt-4 flex justify-center items-center gap-3">
+                    <svg
+                      className='text-primary'
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.99l8 6 8-6V18H4z" />
+                    </svg>
+                    <a
+                      href="mailto:infodeonbase@gmail.com"
+                      target="_blank"
+                      className="text-primary hover:underline flex items-center gap-2"
+                    >
+                      infodeonbase@gmail.com
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

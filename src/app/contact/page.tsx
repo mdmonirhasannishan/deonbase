@@ -20,6 +20,8 @@ const MeetingForm = () => {
     date: '',
     time: '',
     duration: '30',
+    clientCity: "",
+    clientcountry:"",
     reminders: true,
   });
 
@@ -102,6 +104,8 @@ const MeetingForm = () => {
         date: '',
         time: '',
         duration: '30',
+        clientCity: "",
+        clientcountry: "",
         reminders: true,
       });
 
@@ -194,7 +198,7 @@ const MeetingForm = () => {
 
             <div>
               <label htmlFor="title" className="block text-sm font-medium text-gray-300 mb-1">
-                Reason *
+                company *
               </label>
               <input
                 type="text"
@@ -266,6 +270,42 @@ const MeetingForm = () => {
                   <option value="45">45 minutes</option>
                   <option value="60">1 hour</option>
                 </select>
+              </div>
+              <div className="col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    htmlFor="clientName"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
+                    City *
+                  </label>
+                  <input
+                    type="text"
+                    id="clientCity"
+                    name="clientCity"
+                    value={formData.clientCity}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="clientEmail"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
+                    Country *
+                  </label>
+                  <input
+                    type="text"
+                    id="clientcountry"
+                    name="clientcountry"
+                    value={formData.clientcountry}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
               </div>
             </div>
 

@@ -12,7 +12,7 @@ interface EmailRequestBody {
 export async function POST(req: NextRequest) {
   try {
     const body: EmailRequestBody = await req.json();
-    
+
 
     const { to, from, subject, message } = body;
 
