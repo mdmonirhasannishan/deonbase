@@ -271,7 +271,7 @@ const MeetingForm = () => {
                   <option value="60">1 hour</option>
                 </select>
               </div>
-              <div className="col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label
                     htmlFor="clientName"
