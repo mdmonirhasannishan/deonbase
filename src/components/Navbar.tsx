@@ -23,7 +23,7 @@ const Navbar = () => {
           {/* icon and logo */}
           <div className="flex  md:gap-6 justify-start items-center">
             <Onclick path="/">
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center gap-3">
                 <Image
                   className="w-[2.6rem]    cursor-pointer "
                   alt="logo"
@@ -69,8 +69,8 @@ const Navbar = () => {
             <ScrollTo targetId="contact-us-section">
               <div className="w-[9rem] h-13 ">
                 <div className="w-[8.2rem] h-13 transition-all bg-primary rounded-2xl border-b-4 border-r-4 hover:h-11 hover:w-[8rem] border-primary ">
-                  <div className="bg-background border  border-primary text-primary h-12 flex font-bold    justify-center items-center w-[8rem] rounded-2xl">
-                    <h1 className=" text-lg">
+                  <div>
+                    <h1 className="bg-background border  border-primary text-primary h-12 flex font-bold    justify-center items-center w-[8rem] rounded-2xl lg">
                       contact us
                     </h1>
                   </div>

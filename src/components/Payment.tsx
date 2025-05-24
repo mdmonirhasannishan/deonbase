@@ -25,6 +25,8 @@ const PricingTable = () => {
     'Employee Portal',
     '1 Month Help Support',
     'Firebase Backend',
+    "easy to scale",
+    "ready to go setup"
   ];
 
   const toggleClientPortal = () => {
@@ -54,15 +56,11 @@ const PricingTable = () => {
             <h3 className="text-xl font-bold text-primary mb-1">Business Suite</h3>
             <div className="flex justify-center items-baseline my-3">
               <span className="text-4xl font-extrabold text-slate-200">
-                ${includeClientPortal ? basePrice + clientPortalPrice : basePrice}
+               $1999
               </span>
               <span className="ml-2 text-gray-400 text-sm">one-time</span>
             </div>
-            <div className="bg-blue-900/20 border border-blue-700 rounded p-2 mt-2">
-              <p className="text-blue-300 text-xs">
-                First 10 companies get free setup (worth $199)!
-              </p>
-            </div>
+
           </div>
 
           <div className="p-4 border-b border-primary">
@@ -78,30 +76,13 @@ const PricingTable = () => {
           </div>
 
           <div className="p-4">
-            <div className="flex items-center justify-between mb-4">
-              <div>
-                <h4 className="font-medium text-dark">Client Portal</h4>
-                <p className="text-gray-400 text-xs">Dedicated client access</p>
-              </div>
-              <button
-                onClick={toggleClientPortal}
-                className={`px-5 py-3 rounded-md text-sm font-medium transition-colors ${
-                  includeClientPortal
-                    ? 'bg-primary text-white'
-                    : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                }`}
-              >
-                {includeClientPortal ? 'Added (+$200)' : 'Add $200'}
-              </button>
-            </div>
+
 
             <div className=" pt-2 pb-4 mt-6">
-              <a href="/contact" >
-
-                  <button className="w-full bg-primary cursor-pointer hover:bg-primary-dark text-white font-medium py-4 px-6 rounded-md transition-colors text-sm">
-                    Book a Meeting
-                  </button>
-
+              <a href="/contact">
+                <button className="w-full h-14 font-semibold rounded-md bg-primary text-black text-lg flex justify-center items-center relative z-10 hover:bg-black hover:text-primary border border-primary transition all cursor-pointer">
+                  Book a Order
+                </button>
               </a>
             </div>
           </div>
